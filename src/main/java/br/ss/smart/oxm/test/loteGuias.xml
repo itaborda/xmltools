@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ans:mensagemTISS xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ans.gov.br/padroes/tiss/schemas ../xsd/tissV3_00_01.xsd ">
+  <ans:cabecalho>
+    <ans:identificacaoTransacao>
+      <ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao>
+      <ans:sequencialTransacao>123456789012</ans:sequencialTransacao>
+      <ans:dataRegistroTransacao>2001-01-01</ans:dataRegistroTransacao>
+      <ans:horaRegistroTransacao>12:00:00</ans:horaRegistroTransacao>
+    </ans:identificacaoTransacao>
+    <ans:falhaNegocio>1001</ans:falhaNegocio>
+    <ans:origem>
+      <ans:identificacaoPrestador>
+        <ans:CNPJ>01234567891234</ans:CNPJ>
+      </ans:identificacaoPrestador>
+    </ans:origem>
+    <ans:destino>
+      <ans:identificacaoPrestador>
+        <ans:CNPJ>01234567891234</ans:CNPJ>
+      </ans:identificacaoPrestador>
+    </ans:destino>
+    <ans:versaoPadrao>3.00.01</ans:versaoPadrao>
+    <ans:assinaturaDigital Id="idvalue0">
+      <ds:SignedInfo Id="idvalue1">
+        <ds:CanonicalizationMethod Algorithm="http://tempuri.org"/>
+        <ds:SignatureMethod Algorithm="http://tempuri.org">
+          <ds:HMACOutputLength>0</ds:HMACOutputLength>
+        </ds:SignatureMethod>
+        <ds:Reference Id="idvalue2" Type="http://tempuri.org" URI="http://tempuri.org">
+          <ds:Transforms>
+            <ds:Transform Algorithm="http://tempuri.org">
+              <ds:XPath>ds:XPath</ds:XPath>
+            </ds:Transform>
+          </ds:Transforms>
+          <ds:DigestMethod Algorithm="http://tempuri.org"/>
+          <ds:DigestValue>MA==</ds:DigestValue>
+        </ds:Reference>
+      </ds:SignedInfo>
+      <ds:SignatureValue Id="idvalue3">MA==</ds:SignatureValue>
+      <ds:KeyInfo Id="idvalue4">
+        <ds:KeyName>ds:KeyName</ds:KeyName>
+      </ds:KeyInfo>
+      <ds:Object Encoding="http://tempuri.org" Id="idvalue5" MimeType="">
+        <ds:SPKIData>
+          <ds:SPKISexp>MA==</ds:SPKISexp>
+        </ds:SPKIData>
+      </ds:Object>
+    </ans:assinaturaDigital>
+    <ans:loginSenhaPrestador>
+      <ans:loginPrestador>ans:loginPrestador</ans:loginPrestador>
+      <ans:senhaPrestador>ans:senhaPrestador</ans:senhaPrestador>
+    </ans:loginSenhaPrestador>
+  </ans:cabecalho>
+  <ans:prestadorParaOperadora>
+    <ans:loteGuias>
+      <ans:numeroLote>123456789012</ans:numeroLote>
+      <ans:guiasTISS>
+        <ans:guiaSP-SADT>
+          <ans:cabecalhoGuia>
+            <ans:registroANS>123456</ans:registroANS>
+            <ans:numeroGuiaPrestador>12345678901234567890</ans:numeroGuiaPrestador>
+            <ans:guiaPrincipal>ans:guiaPrincipal</ans:guiaPrincipal>
+          </ans:cabecalhoGuia>
+          <ans:dadosAutorizacao>
+            <ans:numeroGuiaOperadora>123</ans:numeroGuiaOperadora>
+            <ans:dataAutorizacao>2001-01-01</ans:dataAutorizacao>
+            <ans:senha>ans:senha</ans:senha>
+            <ans:dataValidadeSenha>2001-01-01</ans:dataValidadeSenha>
+          </ans:dadosAutorizacao>
+          <ans:dadosBeneficiario>
+            <ans:numeroCarteira>123456</ans:numeroCarteira>
+            <ans:atendimentoRN>S</ans:atendimentoRN>
+            <ans:nomeBeneficiario>Gabriel Palácio</ans:nomeBeneficiario>
+            <ans:numeroCNS>ans:numeroCNS</ans:numeroCNS>
+            <ans:identificadorBeneficiario>MA==</ans:identificadorBeneficiario>
+          </ans:dadosBeneficiario>
+          <ans:dadosSolicitante>
+            <ans:contratadoSolicitante>
+              <ans:codigoPrestadorNaOperadora>1234567890123</ans:codigoPrestadorNaOperadora>
+              <ans:nomeContratado>ans:nomeContratado</ans:nomeContratado>
+            </ans:contratadoSolicitante>
+            <ans:profissionalSolicitante>
+              <ans:nomeProfissional>ans:nomeProfissional</ans:nomeProfissional>
+              <ans:conselhoProfissional>1</ans:conselhoProfissional>
+              <ans:numeroConselhoProfissional>123456789012345</ans:numeroConselhoProfissional>
+              <ans:UF>11</ans:UF>
+              <ans:CBOS>201115</ans:CBOS>
+            </ans:profissionalSolicitante>
+          </ans:dadosSolicitante>
+          <ans:dadosSolicitacao>
+            <ans:dataSolicitacao>2001-01-01</ans:dataSolicitacao>
+            <ans:caraterAtendimento>1</ans:caraterAtendimento>
+            <ans:indicacaoClinica>ans:indicacaoClinica</ans:indicacaoClinica>
+          </ans:dadosSolicitacao>
+          <ans:dadosExecutante>
+            <ans:codigonaOperadora>12345678901234</ans:codigonaOperadora>
+            <ans:nomeContratado>ans:nomeContratado</ans:nomeContratado>
+            <ans:CNES>1234567</ans:CNES>
+          </ans:dadosExecutante>
+          <ans:dadosAtendimento>
+            <ans:tipoAtendimento>01</ans:tipoAtendimento>
+            <ans:indicacaoAcidente>0</ans:indicacaoAcidente>
+            <ans:tipoConsulta>1</ans:tipoConsulta>
+            <ans:motivoSaida>41</ans:motivoSaida>
+          </ans:dadosAtendimento>
+          <ans:procedimentosExecutados>
+            <ans:procedimentoExecutado>
+              <ans:dataExecucao>2001-01-01</ans:dataExecucao>
+              <ans:horaInicial>12:00:00</ans:horaInicial>
+              <ans:horaFinal>12:00:00</ans:horaFinal>
+              <ans:procedimento>
+                <ans:codigoTabela>18</ans:codigoTabela>
+                <ans:codigoProcedimento>1234567890</ans:codigoProcedimento>
+                <ans:descricaoProcedimento>ans:descricaoProcedimento</ans:descricaoProcedimento>
+              </ans:procedimento>
+              <ans:quantidadeExecutada>0</ans:quantidadeExecutada>
+              <ans:viaAcesso>1</ans:viaAcesso>
+              <ans:tecnicaUtilizada>1</ans:tecnicaUtilizada>
+              <ans:reducaoAcrescimo>0.0</ans:reducaoAcrescimo>
+              <ans:valorUnitario>0.0</ans:valorUnitario>
+              <ans:valorTotal>0.0</ans:valorTotal>
+              <ans:equipeSadt>
+                <ans:grauPart>00</ans:grauPart>
+                <ans:codProfissional>
+                  <ans:codigoPrestadorNaOperadora>1234567890123</ans:codigoPrestadorNaOperadora>
+                </ans:codProfissional>
+                <ans:nomeProf>ans:nomeProf</ans:nomeProf>
+                <ans:conselho>1</ans:conselho>
+                <ans:numeroConselhoProfissional>12345678912345</ans:numeroConselhoProfissional>
+                <ans:UF>11</ans:UF>
+                <ans:CBOS>201115</ans:CBOS>
+              </ans:equipeSadt>
+            </ans:procedimentoExecutado>
+          </ans:procedimentosExecutados>
+          <ans:outrasDespesas>
+            <ans:despesa>
+              <ans:codigoDespesa>01</ans:codigoDespesa>
+              <ans:servicosExecutados>
+                <ans:dataExecucao>2001-01-01</ans:dataExecucao>
+                <ans:horaInicial>12:00:00</ans:horaInicial>
+                <ans:horaFinal>12:00:00</ans:horaFinal>
+                <ans:codigoTabela>18</ans:codigoTabela>
+                <ans:codigoProcedimento>1234567890</ans:codigoProcedimento>
+                <ans:quantidadeExecutada>0.0</ans:quantidadeExecutada>
+                <ans:unidadeMedida>001</ans:unidadeMedida>
+                <ans:reducaoAcrescimo>0.0</ans:reducaoAcrescimo>
+                <ans:valorUnitario>0.0</ans:valorUnitario>
+                <ans:valorTotal>0.0</ans:valorTotal>
+                <ans:descricaoProcedimento>ans:descricaoProcedimento</ans:descricaoProcedimento>
+                <ans:registroANVISA>12345678912345</ans:registroANVISA>
+                <ans:codigoRefFabricante>ans:codigoRefFabricante</ans:codigoRefFabricante>
+                <ans:autorizacaoFuncionamento>ans:autorizacaoFuncionamento</ans:autorizacaoFuncionamento>
+              </ans:servicosExecutados>
+            </ans:despesa>
+          </ans:outrasDespesas>
+          <ans:observacao>ans:observacao</ans:observacao>
+          <ans:valorTotal>
+            <ans:valorProcedimentos>0.0</ans:valorProcedimentos>
+            <ans:valorDiarias>0.0</ans:valorDiarias>
+            <ans:valorTaxasAlugueis>0.0</ans:valorTaxasAlugueis>
+            <ans:valorMateriais>0.0</ans:valorMateriais>
+            <ans:valorMedicamentos>0.0</ans:valorMedicamentos>
+            <ans:valorOPME>0.0</ans:valorOPME>
+            <ans:valorGasesMedicinais>0.0</ans:valorGasesMedicinais>
+            <ans:valorTotalGeral>0.0</ans:valorTotalGeral>
+          </ans:valorTotal>
+          <ans:assinaturaDigital Id="idvalue6">
+            <ds:SignedInfo Id="idvalue7">
+              <ds:CanonicalizationMethod Algorithm="http://tempuri.org"/>
+              <ds:SignatureMethod Algorithm="http://tempuri.org">
+                <ds:HMACOutputLength>0</ds:HMACOutputLength>
+              </ds:SignatureMethod>
+              <ds:Reference Id="idvalue8" Type="http://tempuri.org" URI="http://tempuri.org">
+                <ds:Transforms>
+                  <ds:Transform Algorithm="http://tempuri.org">
+                    <ds:XPath>ds:XPath</ds:XPath>
+                  </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://tempuri.org"/>
+                <ds:DigestValue>MA==</ds:DigestValue>
+              </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue Id="idvalue9">MA==</ds:SignatureValue>
+            <ds:KeyInfo Id="idvalue10">
+              <ds:KeyName>ds:KeyName</ds:KeyName>
+            </ds:KeyInfo>
+            <ds:Object Encoding="http://tempuri.org" Id="idvalue11" MimeType="">
+              <ds:SPKIData>
+                <ds:SPKISexp>MA==</ds:SPKISexp>
+              </ds:SPKIData>
+            </ds:Object>
+          </ans:assinaturaDigital>
+        </ans:guiaSP-SADT>
+      </ans:guiasTISS>
+    </ans:loteGuias>
+  </ans:prestadorParaOperadora>
+  <ans:epilogo>
+    <ans:hash>349b749711873989c544668a963996db</ans:hash>
+  </ans:epilogo>
+</ans:mensagemTISS>

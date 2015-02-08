@@ -19,7 +19,7 @@ import br.com.d4n.oxm.core.helper.BaseNodeHolderFactory;
 public class GuiaTissV2NodeHolderFactory extends
 		BaseNodeHolderFactory<LoteGuia.GuiaTISS, LoteGuia> {
 
-	private static final String GUIA_TISS_PATH = "novoPathDoGuiaTISS";
+	private static final String GUIA_TISS_PATH = "guiasTISS";
 
 	@Override
 	public NodeHolder<LoteGuia.GuiaTISS, LoteGuia> create(

@@ -28,7 +28,7 @@ public class LoteParserV2_A_1 implements NodeHolderFactoryDecorator<LoteGuia, Ob
 
 		String v = node.parse(null).getValue();
 
-		node.set("/asdasdasd/ce=" + v, new NodeConverter<LoteGuia.GuiaTISS.Dados, LoteGuia>() {
+/*		node.set("/asdasdasd/ce=" + v, new NodeConverter<LoteGuia.GuiaTISS.Dados, LoteGuia>() {
 
 			@Override
 			public Dados convert(NodeHolder<Dados, LoteGuia> nodeHolder, LoteGuia parent,
@@ -36,7 +36,7 @@ public class LoteParserV2_A_1 implements NodeHolderFactoryDecorator<LoteGuia, Ob
 
 				return new Dados(nodeHolder.getNode().getNodeName());
 			}
-		});
+		});*/
 
 		return node;
 	}

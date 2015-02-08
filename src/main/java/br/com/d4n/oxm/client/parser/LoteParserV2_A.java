@@ -25,13 +25,13 @@ public class LoteParserV2_A implements NodeHolderFactoryDecorator<LoteGuia, Obje
 
 		NodeHolder<LoteGuia, Object> node = decorator.createHolder(is);
 
-		this.setUnicoProcedimento(node);
+//		this.setUnicoProcedimento(node);
 
 		return node;
 	}
 
 	private void setUnicoProcedimento(NodeHolder<LoteGuia, Object> node) throws Exception {
-		node.set("*/procedimentosExecutados/procedimentoExecutado[1]",
+		node.set("*/*/procedimentosExecutados/procedimentoExecutado[1]",
 				new NodeConverter<LoteGuia.GuiaTISS.Procedimento, LoteGuia>() {
 
 					@Override

@@ -73,7 +73,7 @@
             <ans:numeroCNS>ans:numeroCNS</ans:numeroCNS>
             <ans:identificadorBeneficiario>MA==</ans:identificadorBeneficiario>
           </ans:dadosBeneficiario>
-          <ans:dadosSolicitante>
+          <ans:dadosSolicitante c="ans:loteGuias">
             <ans:contratadoSolicitante>
               <ans:codigoPrestadorNaOperadora>1234567890123</ans:codigoPrestadorNaOperadora>
               <ans:nomeContratado>ans:nomeContratado</ans:nomeContratado>

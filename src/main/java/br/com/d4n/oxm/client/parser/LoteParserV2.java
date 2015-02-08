@@ -33,7 +33,7 @@ public class LoteParserV2 implements NodeHolderFactoryDecorator<LoteGuia, Object
 		this.setDados(node);
 
 		// TROCA GUIATISS
-		new GuiaTissV2NodeHolderFactory();
+		new GuiaTissV2NodeHolderFactory().create(node);
 
 		return node;
 	}
